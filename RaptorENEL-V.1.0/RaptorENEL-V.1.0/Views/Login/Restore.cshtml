@@ -26,13 +26,13 @@
 
 </head>
 <body>
-    @using (Html.BeginForm("index", "Login", FormMethod.Post, new { id = "login_user_validate", name= "login_user_validate", novalidate = "novalidate" }))
+    @using (Html.BeginForm("Restore", "Login", FormMethod.Post, new { id = "restore_user_validate", name= "restore_user_validate", novalidate = "novalidate" }))
     {
         <div class="container">
 
             <div class="row">
-                <div class="col-xs-4"><br /></div>
-                <div class="col-xs-4 text-center" style="">
+                <div class="col-xs-3"><br /></div>
+                <div class="col-xs-6 text-center" style="">
                     
                     <br />
                     <div class="col-lg-12 text-center" style="background: url(../Images/opacity.png) repeat; margin-bottom: 0;">
@@ -49,62 +49,54 @@
                         </div>
 
                         <br /><br />
-                        <div class="row">
-                            <div class="col-md-1 text-center"></div>
-                            <div class="col-md-10 text-center">
-                                <div class="form-group">
-                                    <div class="col-md-12 input-group secondary">
-                                        <span class="input-group-addon">
-                                            <span class="arrow"></span>
-                                            <i class="fa fa-user" style="color: #555555 !important;"></i>
-                                        </span>
-                                        @Html.EditorFor(model => model.username, new { htmlAttributes = new { @class = "form-control", name = "username", id = "username", placeholder = "Nombre de usuario" } })
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-1 text-center"></div>
-                        </div>
 
                         <div class="row">
-                            <div class="col-md-1 text-center"></div>
-                            <div class="col-md-10 text-center">
-                                <div class="form-group">
-                                    <div class="col-md-12 input-group secondary">
-                                        <span class="input-group-addon">
-                                            <span class="arrow"></span>
-                                            <i class="fa fa-key" style="color: #555555 !important;"></i>
-                                        </span>
-                                        @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control", type="password", name = "password", id = "password", placeholder = "Clave" } })
-
-                                    </div>
-                                </div>
+                            <div class="col-md-2 text-center"></div>
+                            <div class="col-md-8 text-center">
+                                
+                                <p style="color: #FFFFFF;">
+                                    ¿Ha olvidado su clave? <br />
+                                    Ingrese su dirección de correo electrónico <br />
+                                    le enviaremos instrucciones para establecer su clave.
+                                </p>
 
                             </div>
-                            <div class="col-md-1 text-center"></div>
+                            <div class="col-md-2 text-center"></div>
                         </div>
 
                         <br />
                         <div class="row">
-                            <div class="col-md-1 text-center"></div>
-                            <div class="col-md-10 text-center">
-                                <button type="submit" class="btn btn-info btn-icon" style="width: 100%;">
-                                    <span><b>LOGIN</b></span>
-                                </button>
-
-                                <br />
-                                <hr style="color: #FFF;" width="75%" />
-                                <a href="/Login/Restore" style="color: #FFF; text-decoration: none;">
-                                    <span>¿Ha olvidado su clave o usuario?</span>
-                                </a>
+                            <div class="col-md-2 text-center"></div>
+                            <div class="col-md-8 text-center">
+                                <div class="form-group">
+                                    <div class="col-md-12 input-group secondary">
+                                        <span class="input-group-addon">
+                                            <span class="arrow"></span>
+                                            <i class="fa fa-envelope" style="color: #555555 !important;"></i>
+                                        </span>
+                                        @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control text-center", name = "email", id = "email", placeholder = "Correo de usuario" } })
+                                        
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-1 text-center"></div>
+                            <div class="col-md-2 text-center"></div>
+                        </div>
+
+                        <br />
+                        <div class="row">
+                            <div class="col-md-2 text-center"></div>
+                            <div class="col-md-8 text-center">
+                                <button type="submit" class="btn btn-info btn-icon" style="width: 100%;">
+                                    <span><b>Restablecer Clave</b></span>
+                                </button>
+                            </div>
+                            <div class="col-md-2 text-center"></div>
                         </div>
 
                         <br /><br />
                     </div>
                 </div>
-                <div class="col-xs-4"><br /></div>
+                <div class="col-xs-3"><br /></div>
             </div>
 
         </div>

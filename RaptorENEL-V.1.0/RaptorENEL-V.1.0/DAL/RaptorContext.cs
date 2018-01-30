@@ -19,6 +19,11 @@ namespace RaptorENEL_V._1._0.DAL
         public DbSet<Municipio> Municipio { get; set; }
         public DbSet<Reportecandidato> Reportecandidato { get; set; }
         public DbSet<Candidato> Candidato { get; set; }
+        public DbSet<Hurto> Hurto { get; set; }
+        public DbSet<ImagenCandidato> ImagenCandidato { get; set; }
+        public DbSet<Ubala> Ubala { get; set; }
+        public DbSet<Notificacion> Notificacion { get; set; }
+
 
 
 
@@ -28,6 +33,10 @@ namespace RaptorENEL_V._1._0.DAL
       
         }
 
-        
+        public static String hostImages = System.Web.HttpContext.Current.Request.Url.AbsoluteUri;
+        public static String imagesAnexo = "/projects/cundinamarca100/anexo/imagen/";
+        public static String imagesUbala = "/projects/cundinamarca100/ubala/imagen/";
+        public static String imagesHurto = "/projects/reporte_hurtos/hurtos/hurto/";
+
     }
 }

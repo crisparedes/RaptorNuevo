@@ -216,6 +216,7 @@
     <Compile Include="Controllers\CandidatoController.cs" />
     <Compile Include="Controllers\HurtoesController.cs" />
     <Compile Include="Controllers\ImagenCandidatoController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MunicipiosController.cs" />
     <Compile Include="Controllers\NotificacionController.cs" />
     <Compile Include="Controllers\ReportecandidatoController.cs" />
@@ -233,6 +234,7 @@
     <Compile Include="Models\HurtoModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ImagenCandidatoModels.cs" />
+    <Compile Include="Models\LoginModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MunicipioModels.cs" />
     <Compile Include="Models\NotificacionModels.cs" />
@@ -261,6 +263,7 @@
     <Content Include="css\htmlGrid.css" />
     <Content Include="css\justified-nav.css" />
     <Content Include="css\Layout.css" />
+    <Content Include="css\Login.css" />
     <Content Include="css\perfect-scrollbar.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -474,11 +477,14 @@
     <Content Include="Views\Notificacion\Delete.cshtml" />
     <Content Include="Views\Notificacion\Edit.cshtml" />
     <Content Include="Views\Notificacion\Index.cshtml" />
+    <Content Include="Views\Login\index.cshtml" />
+    <Content Include="Views\Login\Restore.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="projects\cundinamarca100\anexo\imagen\" />
     <Folder Include="projects\cundinamarca100\ubala\imagen\" />
+    <Folder Include="Views\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
