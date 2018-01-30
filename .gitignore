@@ -1,3 +1,10 @@
-RaptorENEL-V.1.0/RaptorENEL-V.1.0/bin/
+*.config
 
-RaptorENEL-V.1.0/RaptorENEL-V.1.0/obj/
+*.suo
+
+*.cache
+
+*.csproj
+
+*.dll
+*.pdb
